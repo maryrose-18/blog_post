@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    COMPANY.load_data();
+    COMPANY.loadData();
 });
 
 // data:{ [use this for POST,PUT,PATCH, DELETE]
@@ -16,22 +16,8 @@ const COMPANY = (()=>
 
     this_data.loadData = () =>
     { //methods or functions
-        instance.get(``,
-        {
-            params: ({
-
-            })
-        }).then((response) =>
-        {
-            alert(1);
-
-        }).catch((error) =>
-        {
-
-        }).finally(() =>
-        {
-
-        })
+        
+        
         
     };
 

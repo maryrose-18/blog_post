@@ -16,8 +16,10 @@
 
     <script> const _TOKEN = "{{csrf_token()}}"; </script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+    
     @yield('custom_js')
 </body>
 </html>
