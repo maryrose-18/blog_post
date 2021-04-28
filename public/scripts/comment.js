@@ -55,7 +55,7 @@ const COMMENT = (()=>
                 success:(result) =>
                 {
                     COMMENT.loadSubComment();
-                    COMMENT.clearFields();
+                    
     
                     console.log(result)
                 },
@@ -105,6 +105,7 @@ const COMMENT = (()=>
             },
             success:(result) =>
             {
+                COMMENT.loadSubComment();
                 console.log(result);
             },
             error:(error)=>
@@ -122,6 +123,7 @@ const COMMENT = (()=>
             dataType: "json",
             success:(result) =>
             {
+                COMMENT.clearFields();
                 console.log(result);
                 console.log(result);
                 let data = '';
@@ -155,7 +157,7 @@ const COMMENT = (()=>
                         {
                             sub_comment1+=`
                             <div class="sublevel1">
-                            <div class="comment-user">Sub${this.user}</div>
+                            <div class="comment-user">${this.user}</div>
                                 <div class="comment-timestamp">${da}-${mo}-${ye}</div>
                                 <div class="comment-content">${this.content}
                                     <div class="comment-controls">
@@ -168,7 +170,7 @@ const COMMENT = (()=>
                         {
                             sub_comment2+=`
                             <div class="sublevel2">
-                            <div class="comment-user">SubSub${this.user}</div>
+                            <div class="comment-user">${this.user}</div>
                                 <div class="comment-timestamp">${da}-${mo}-${ye}</div>
                                 <div class="comment-content">${this.content}</div>
                             </div>`;
