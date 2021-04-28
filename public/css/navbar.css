@@ -25,13 +25,8 @@ ul {
   
 .content-container
 {
-    width: 90%;
-    height: 800px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    left: 5%;
-    background: rgba(255,255,255,0.3);
+    width: 62vw;
+    background: rgb(255 255 255 / 62%);
     box-shadow: 14px 12px 20px 7px #6b6a6a61;
     border-radius:25px;
     margin-top:25px;
@@ -53,7 +48,8 @@ ul {
     /* background: #50C9C3;  
     background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  
     background: linear-gradient(to right, #96DEDA, #50C9C3);    */
-
+    display:grid;
+    justify-content: center;
     background-image:url('../images/340434.png');
 }
 
